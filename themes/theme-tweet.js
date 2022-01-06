@@ -11,7 +11,7 @@ const themeTweet = [
         background: "#ccc5b9",
         colorBox: "#fffcf2",
         colorText: "#252422",
-        image: "https://picsum.photos/600/599"
+        image: "https://picsum.photos/600/600"
     },
     {
         id: 2,
