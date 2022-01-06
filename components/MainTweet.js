@@ -15,7 +15,7 @@ const MainTweet = ({selectedDesign, tweet, borderPrint}) => {
 
     return (
         <AspectRatio maxW='600px' ratio={4/4} >
-            <Flex direction='column' p={8} bg={selectedDesign.background} borderRadius={borderPrint ? "0px" : "12px"}>
+            <Flex direction='column' p={8} bg={selectedDesign.background} bgImage={selectedDesign.image} borderRadius={borderPrint ? "0px" : "12px"}>
                 <Flex bg={selectedDesign.colorBox} direction='column' py={6} px={6} w='100%' boxShadow='xl' borderRadius='xl'>
                     <Flex w='100%'>
                     <Avatar

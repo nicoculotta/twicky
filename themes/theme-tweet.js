@@ -3,13 +3,15 @@ const themeTweet = [
         id: 0,
         background: "#227c9d",
         colorBox: "#fef9ef",
-        colorText: "gray.900"
+        colorText: "gray.900",
+        image: "https://picsum.photos/600/600"
     },
     {
         id: 1,
         background: "#ccc5b9",
         colorBox: "#fffcf2",
-        colorText: "#252422"
+        colorText: "#252422",
+        image: "https://picsum.photos/600/599"
     },
     {
         id: 2,
