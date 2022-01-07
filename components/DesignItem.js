@@ -11,6 +11,10 @@ const DesignItem = ({ item, i, handleDesign, designActive }) => {
         w="100px"
         h="100px"
         bg={item.background}
+        bgImage={item.image}
+        bgPosition='center'
+        bgSize='cover'
+        bgGradient={item.gradient}
         rounded="xl"
         onClick={() => handleDesign(item)}
         pos="relative"
