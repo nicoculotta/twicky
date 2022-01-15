@@ -1,24 +1,12 @@
-import { Box, Flex, Heading } from "@chakra-ui/layout";
-import { FaTwitter } from "react-icons/fa";
+import { Image } from "@chakra-ui/image";
+import { Flex, Link } from "@chakra-ui/layout";
 
-const Brand = () => {
+const Brand = ({ colorMode }) => {
   return (
     <Flex align="center" pl={4}>
-      <Box fontSize="xl" color="#90CDf4">
-        <FaTwitter />
-      </Box>
-      <Heading
-        ml={1}
-        letterSpacing="-1px"
-        textAlign="center"
-        fontWeight="extrabold"
-        fontSize="18px"
-      >
-        Twicky{" "}
-        <Heading as="span" fontWeight="light" fontSize="16px" ml={1}>
-          | style your tweet
-        </Heading>
-      </Heading>
+      <Link href="./">
+      <Image w="137px" src={ colorMode === "light" ? "assets/logo.svg" : "assets/logo_white.svg"}/>
+      </Link>
     </Flex>
   );
 };

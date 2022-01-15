@@ -15,8 +15,8 @@ const themeTweet = [
     },
     {
         id: 2,
-        background: "#ffffff",
-        colorBox: "rgba( 255, 255, 255, 0.9 );",
+        background: "#fff",
+        colorBox: "#fff",
         colorText: "#360f72",
         gradient: "linear(19deg, #FAACA8, #DDD6F3)",
         border: "1px solid rgba( 255, 255, 255, 0.5 );"
@@ -30,11 +30,10 @@ const themeTweet = [
     },
     {
         id: 4,
-        background: "#effdff",
-        colorBox: "rgba( 255, 255, 255, 0.4 );",
+        background: "#fff",
+        colorBox: "#fff",
         colorText: "#000000",
         image:"assets/bg/Vorderrhein.svg",
-        border: "1px solid rgba( 255, 255, 255, 0.15 );"
     },
     {
         id: 5,
@@ -53,42 +52,41 @@ const themeTweet = [
     {
         id: 7,
         background: "#ffffff",
-        colorBox: "rgba( 255, 255, 255, 0.3 );",
+        colorBox: "#ffffff",
         colorText: "#000814",
         image:"assets/bg/Whangaehu.svg",
-        border: "1px solid rgba( 255, 255, 255, 0.1 );"
     },
     {
         id: 8,
-        background: "#5656DB",
-        colorBox: "rgba( 255, 255, 255, 0.3 );",
+        background: "#000814",
+        colorBox: "rgba( 255, 255, 255, 0.9 );",
         colorText: "#000814",
         image:"assets/bg/bg01.jpg",
-        border: "1px solid rgba( 255, 255, 255, 0.1 );"
+        border: "1px solid rgba( 255, 255, 255);"
     },
     {
         id: 9,
-        background: "#95CF95",
-        colorBox: "rgba( 255, 255, 255, 0.3 );",
+        background: "rgba(232,243,249, 0.9)",
+        colorBox: "rgba(232,243,249, 0.9)",
         colorText: "#000814",
         image:"assets/bg/bg02.jpg",
-        border: "1px solid rgba( 255, 255, 255, 0.1 );"
+        border: "1px solid rgba(232,243,249);"
     },
     {
         id: 10,
-        background: "#AD2424",
-        colorBox: "rgba( 255, 255, 255, 0.1 );",
-        colorText: "#FFFFFF",
+        background: "#000814",
+        colorBox: "rgba( 0 , 0, 0, 0.8 );",
+        colorText: "#FFF",
         image:"assets/bg/bg03.jpg",
-        border: "1px solid rgba( 255, 255, 255, 0.1 );"
+        border: "1px solid rgba( 0 , 0, 0, 0.8 );"
     },
     {
         id: 11,
-        background: "#AD2424",
-        colorBox: "rgba( 255, 255, 255, 0.1 );",
-        colorText: "#FFF",
+        background: "#000814",
+        colorBox: "rgba( 255, 255, 255, 0.8 );",
+        colorText: "#000814",
         image:"assets/bg/bg04.jpg",
-        border: "1px solid rgba( 255, 255, 255, 0.1 );"
+        border: "1px solid rgba( 255, 255, 255, 0.8 );"
     }
 ]
 
