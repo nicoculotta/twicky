@@ -18,7 +18,7 @@ export default function Main() {
   const { colorMode, toggleColorMode } = useColorMode();
 
   const [tweetUrl, setTweetUrl] = useState(
-    "https://twitter.com/csainz/status/1474247918768963592"
+    "https://twitter.com/NicoCulotta/status/1482471126282428417"
   );
   const [tweet, setTweet] = useState(null);
   const print = useRef(null);
@@ -33,7 +33,6 @@ export default function Main() {
     /*     const regex = /((([A-Za-z]{3,9}:(?:\/\/)?)(?:[-;:&=\+\$,\w]+@)?[A-Za-z0-9.-]+|(?:www.|[-;:&=\+\$,\w]+@)[A-Za-z0-9.-]+)((?:\/[\+~%\/.\w-_]*)?\??(?:[-\+=&;%@.\w_]*)#?(?:[\w]*))?)/
   console.log(regex.test(tweetUrl)) */
     setLoading(true);
-
     const response = await getTweet(tweetUrl.split("/").at(-1));
     setLoading(false);
     setTweet(response);
