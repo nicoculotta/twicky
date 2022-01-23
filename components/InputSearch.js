@@ -6,7 +6,7 @@ import { FiSearch } from "react-icons/fi"
 
 const InputSearch = ({tweetUrl, setTweetUrl, handleStyle}) => {
     return (
-        <Flex w="100%" maxW="500px" justify="center">
+        <Flex w="100%" maxW={{ base: '100%', md: '500px'}} justify="center" mt={{base: "16px", md: 0}}>
           <Input
             variant="filled"
             placeholder="Paste your Tweet"

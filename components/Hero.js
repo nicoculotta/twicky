@@ -7,20 +7,21 @@ import React from 'react'
 const Hero = () => {
     return (
         <Flex
-            m="50px auto 0"
+            m={{base:"80px auto",md:"50px auto 0"}}
             maxW="1200px"
             w="100%"
             align="center"
             justify="center"
+            direction={{base:'column', md: 'row'}}
             py={7}
             px={4}
         >
-            <Box maxW="469px" w="100%" h="469px" position="relative">
+            <Box display={{base: "none", md: "block"}} maxW="469px" w="100%" h="469px" position="relative">
                 <Image src="/assets/home-mock.png" layout="fill" objectFit="cover"/>
             </Box>
-            <Box ml={8}>
-                <Heading as="h1" fontSize={42}>Tweet, Style and Share</Heading>
-                <Text fontSize="lg" opacity="0.7">Style your tweet and connect with your audience.</Text>
+            <Box ml={{base:0, md:8}}>
+                <Heading as="h1" fontSize={{base: 28, md:42}}>Tweet, Style and Share</Heading>
+                <Text fontSize={['sm', 'lg']} opacity="0.7">Style your tweet and connect with your audience.</Text>
                 <Link href="./app">
                     <Button as="a"
                         fontSize="14px"
@@ -28,6 +29,7 @@ const Hero = () => {
                         borderRadius="lg"
                         mt={5}
                         colorScheme="blue"
+                        w={{base: '100%', md: 'auto'}}
                         >
                         Try the app
                     </Button>

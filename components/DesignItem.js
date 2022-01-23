@@ -1,15 +1,13 @@
-import { Box, WrapItem, Flex, Stack } from "@chakra-ui/layout";
+import { Box, GridItem, Flex, Stack } from "@chakra-ui/layout";
 import { BsCheckCircleFill } from "react-icons/bs";
 
 const DesignItem = ({ item, i, handleDesign, designActive }) => {
   return (
-    <WrapItem>
-      <Flex
+
+      <GridItem
         p={3}
-        justify="center"
-        align="center"
-        w="100px"
-        h="100px"
+        w={{ base: "72px", md: "100px"}}
+        h={{ base: "72px", md: "100px"}}
         bg={item.background}
         bgImage={item.image}
         bgPosition='center'
@@ -58,8 +56,7 @@ const DesignItem = ({ item, i, handleDesign, designActive }) => {
             ) 
         }
 
-      </Flex>
-    </WrapItem>
+      </GridItem>
   );
 };
 

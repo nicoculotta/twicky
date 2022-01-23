@@ -10,7 +10,6 @@ class MyDocument extends Document {
     return (
       <Html>
         <Head>
-            <title>Twicky</title>
             <meta name="description" content="Style your tweet and connect with your audience" />
             <link rel="icon" href="/favicon.ico" />
         </Head>

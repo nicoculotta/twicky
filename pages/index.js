@@ -7,10 +7,14 @@ import {FaLinkedin, FaGithub, FaTwitter } from "react-icons/fa"
 import { Button } from "@chakra-ui/button";
 import NextLink from "next/link";
 import { Image } from "@chakra-ui/image";
+import Head from "next/head";
 
 export default function Home() {
   return (
     <>
+        <Head>
+            <title>Twicky</title>
+        </Head>
       <Flex
         m="0 auto"
         maxW="1200px"
@@ -21,7 +25,7 @@ export default function Home() {
         px={4}
       >
         <Brand colorMode="light" />
-        <Text fontSize="sm">
+        <Text fontSize={{ base: '11px', md: '14px'}}>
           Made with love by{" "}
           <Link
             fontWeight="bold"
@@ -38,30 +42,26 @@ export default function Home() {
       {/* HOW IT WORKS */}
       <Flex
         textAlign="center"
-        m="0 auto"
         maxW="900px"
         w="100%"
-        mb={12}
-        mt="120px"
+        m={{ base: "16px auto 0", md: "64px auto 0"}}
       >
-        <Heading w="100%">How it works</Heading>
+        <Heading w="100%" fontSize={{base: '2xl', md: '3xl'}}>How it works</Heading>
       </Flex>
       <Flex
+        direction={{ base: 'column', md: 'row'}}
+        align="center"
         justify="space-between"
-        m="0 auto"
         maxW="800px"
         w="100%"
-        mt={12}
-        mb="120px"
+        m={{ base: "36px auto", md: "24px auto 64px"}}
       >
         <Step text="Copy a tweet url">
           <BiCopy />
         </Step>
-        <Flex ml="30px">
           <Step text="Choose a design">
             <BiPaint />
           </Step>
-        </Flex>
         <Step text="Export the image and share">
           <BiShare />
         </Step>
@@ -70,34 +70,34 @@ export default function Home() {
       {/* IMAGES */}
 
       <Box bgGradient="linear(45deg, #d2efff, #f2fcfe)">
-        <Flex m="0 auto" maxW="1200px" w="100%" pt={12} pb={6}>
-          <Box w="100%" p={2}>
+        <Flex justify="center"m="0 auto" maxW="1200px" w="100%" pt={12} pb={6} direction={{base:'column', md:'row'}}>
+          <Flex w="100%" p={2} justify="center">
             <Image
-              w="400px"
+              w={{ base: 328, sm: 400}}
               rounded="8px"
               src="/assets/tweet1.png"
               objectFit="cover"
             />
-          </Box>
-          <Box w="100%" p={2}>
+          </Flex>
+          <Flex w="100%" p={2} justify="center">
             <Image
-              w="400px"
+              w={{ base: 328, sm: 400}}
               rounded="8px"
               src="/assets/tweet2.png"
               objectFit="cover"
             />
-          </Box>
-          <Box w="100%" p={2}>
+          </Flex>
+          <Flex w="100%" p={2} justify="center">
             <Image
-              w="400px"
+              w={{ base: 328, sm: 400}}
               rounded="8px"
               src="/assets/tweet3.png"
               objectFit="cover"
             />
-          </Box>
+          </Flex>
         </Flex>
 
-        <Box w="100%" textAlign="center">
+        <Box w="100%" textAlign="center" p="0 16px">
           <NextLink href="./app">
             <Button
               fontSize="14px"
@@ -106,6 +106,8 @@ export default function Home() {
               mb={10}
               color="white"
               bg="blackAlpha.800"
+              w={{ base: '100%', sm: 'auto'}}
+              maxW={{ base: 327, sm: 'auto'}}
               _hover={{
                 backgroundColor: "#65c6fb",
               }}
@@ -118,16 +120,18 @@ export default function Home() {
     
       {/* FOOTER */}
       <Flex
-        m="0 auto"
+        m={{ base: '24px 0', md: '0 auto'}}
+        h={{ base: 170, md: 'auto'}}
         maxW="1200px"
         w="100%"
         align="center"
         justify="space-between"
         py={7}
         px={4}
+        direction={{ base:'column', md: 'row'}}
       >
         <Brand colorMode="light" />
-        <Text fontSize="sm">
+        <Text fontSize={{ base: '11px', md: '14px'}}>
           Made with love by{" "}
           <Link
             fontWeight="bold"
