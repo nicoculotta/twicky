@@ -1,6 +1,5 @@
 import { Button } from '@chakra-ui/button'
 import { Box, Flex, Heading, Text } from '@chakra-ui/layout'
-import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
 
@@ -17,7 +16,7 @@ const Hero = () => {
             px={4}
         >
             <Box display={{base: "none", md: "block"}} maxW="469px" w="100%" h="469px" position="relative">
-                <Image src="/assets/home-mock.png" layout="fill" objectFit="cover"/>
+                <img src="/assets/home-mock.png"/>
             </Box>
             <Box ml={{base:0, md:8}}>
                 <Heading as="h1" fontSize={{base: 28, md:42}}>Tweet, Style and Share</Heading>

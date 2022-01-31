@@ -16,6 +16,8 @@ const DesignItem = ({ item, i, handleDesign, designActive }) => {
         rounded="xl"
         onClick={() => handleDesign(item)}
         pos="relative"
+        display="grid"
+        alignContent="center"
       >
         <Flex
           direction="column"
@@ -26,7 +28,7 @@ const DesignItem = ({ item, i, handleDesign, designActive }) => {
           p={2}
         >
           <Stack w="100%" spacing="3px">
-            <Flex align="center">
+            <Flex align="center" justify="center">
               <Box h="9px" w="12px" rounded="full" bg="gray.500" mr={1}></Box>
               <Stack w="100%" spacing="2px">
                 <Box h="3px" w="40%" bg="gray.500"></Box>

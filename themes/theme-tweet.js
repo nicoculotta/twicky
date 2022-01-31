@@ -14,6 +14,27 @@ const themeTweet = [
         gradient: "linear(90deg, #00DBDE, #FC00FF)"
     },
     {
+        id: 12,
+        background: "#ffffff",
+        colorBox: "#ffffff",
+        colorText: "#000",
+        gradient: "linear(45deg, #85FFBD, #FFFB7D)"
+    },
+    {
+        id: 13,
+        background: "#ffffff",
+        colorBox: "#ffffff",
+        colorText: "#000",
+        gradient: "linear(45deg, #FBDA61, #FF5ACD)"
+    },
+    {
+        id: 14,
+        background: "#ffffff",
+        colorBox: "#ffffff",
+        colorText: "#000",
+        gradient: "linear(225deg, #FF3CAC, #784BA0, #2B86C5)"
+    },
+    {
         id: 2,
         background: "#fff",
         colorBox: "#fff",
@@ -87,6 +108,37 @@ const themeTweet = [
         colorText: "#000814",
         image:"assets/bg/bg04.jpg",
         border: "1px solid rgba( 255, 255, 255, 0.8 );"
+    },
+    {
+        id: 15,
+        background: "#000814",
+        colorBox: "rgba( 0 , 0, 0, 0.8 );",
+        colorText: "#FFF",
+        image:"assets/bg/bg05.jpg",
+        border: "1px solid rgba( 0 , 0, 0, 0.8 );"
+    },
+    {
+        id: 16,
+        background: "#000814",
+        colorBox: "rgba( 0 , 0, 0, 0.9 );",
+        colorText: "#FFF",
+        image:"assets/bg/bg06.jpg",
+        border: "1px solid rgba( 0 , 0, 0, 0.9 );"
+    },
+    {
+        id: 17,
+        background: "#000814",
+        colorBox: "rgba( 255, 255, 255, 0.9 );",
+        colorText: "#000814",
+        image:"assets/bg/bg07.jpg",
+        border: "1px solid rgba( 255, 255, 255, 0.9 );"
+    },    {
+        id: 18,
+        background: "#000814",
+        colorBox: "rgba( 0 , 0, 0, 0.8 );",
+        colorText: "#FFF",
+        image:"assets/bg/bg08.jpg",
+        border: "1px solid rgba( 0 , 0, 0, 0.8 );"
     }
 ]
 
