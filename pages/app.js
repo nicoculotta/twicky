@@ -16,6 +16,8 @@ import LoadingScreen from "../components/LoadingScreen";
 import Head from "next/head";
 
 export default function Main() {
+
+
   const { colorMode, toggleColorMode } = useColorMode();
 
   const [tweetUrl, setTweetUrl] = useState(
