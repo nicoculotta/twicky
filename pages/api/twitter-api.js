@@ -10,7 +10,10 @@ export default async(req, res) => {
   const paramsTweet = {
     ids: req.body.tweet_id,
     tweet: {
-      fields: ['public_metrics', 'author_id', 'created_at', 'text']
+      fields: ['public_metrics', 'author_id', 'created_at', 'text'],
+    },
+    media: {
+      fields: ['url', 'preview_image_url', 'width', 'height']
     }
   }
 
@@ -20,7 +23,7 @@ export default async(req, res) => {
     const { author_id } = await dataTweet[0]
   
     const paramsUser = {
-      ids: `${author_id}`,
+      ids: author_id,
       user: {
         fields: ['name', 'username', 'profile_image_url', 'public_metrics']
       }

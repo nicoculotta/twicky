@@ -16,6 +16,7 @@ const InputSearch = ({tweetUrl, setTweetUrl, handleStyle}) => {
             focusBorderColor="blue.200"
             fontSize="14px"
             isTruncated
+            isRequired
           />
           <Button 
             colorScheme='blue'
